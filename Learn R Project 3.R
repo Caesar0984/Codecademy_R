@@ -8,11 +8,12 @@ library(readr)
 library(tidyr)
 
 # load CSVs
-setwd("C:/Users/Dell/Downloads/Learning Materials/Career Prep/Programming/R/Codecademy Learn R/US_Census")
-mydir = "C:/Users/Dell/Downloads/Learning Materials/Career Prep/Programming/R/Codecademy Learn R/US_Census"
+setwd("US_Census")
+mydir = "US_Census"
 files <- list.files(path = mydir, pattern = "states_.*csv")
 df_list <- lapply(files, read_csv)
 us_census <- bind_rows(df_list)
+# Copy and paste your own directory after downloading the csv files
 
 # inspect data
 str(us_census)
