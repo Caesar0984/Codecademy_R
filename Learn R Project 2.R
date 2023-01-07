@@ -7,7 +7,8 @@ library(readr)
 library(dplyr)
 
 # Task 2 load data
-cars <- read_csv("C:/Users/Dell/Downloads/Learning Materials/Career Prep/Programming/R/Codecademy Learn R/cars85.csv")
+cars <- read_csv("cars85.csv")
+# After downloading the csv file, copy your file path to read the csv file.
 
 # Task 3 inspect data
 head(cars)
