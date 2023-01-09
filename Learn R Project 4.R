@@ -7,7 +7,8 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 
-noaa_data <- read_csv("C:/Users/Dell/Downloads/Learning Materials/Career Prep/Programming/R/Codecademy Learn R/Project 4/carbon_dioxide_levels.csv")
+noaa_data <- read_csv("carbon_dioxide_levels.csv")
+# Copy the path of a csv file before you run this code
 head(noaa_data)
 
 options(scipen=10000) #removes scientific notation
@@ -18,7 +19,8 @@ noaa_viz <- ggplot(data = noaa_data, aes(x = Age_yrBP, y = CO2_ppmv)) +
 noaa_viz + scale_x_reverse(lim=c(800000,0))
 
 #Create IAC Visualization
-iac_data <- read_csv("C:/Users/Dell/Downloads/Learning Materials/Career Prep/Programming/R/Codecademy Learn R/Project 4/yearly_co2.csv")
+iac_data <- read_csv("yearly_co2.csv")
+# Copy the path of a csv file before you run this code
 head(iac_data)
 millenia_max <- max(iac_data$data_mean_global) 
 iac_viz <- ggplot(data = iac_data, aes(x=year, y=data_mean_global)) +
