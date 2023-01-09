@@ -16,6 +16,7 @@ manhattan_price <- manhattan_one_bed$rent
 
 queens_one_bed <- read_csv('queens-one-bed.csv')
 queens_price <- queens_one_bed$rent
+# Copy the paths of csv files before you run these code
 
 #Calculate Mean
 brooklyn_mean <- mean(brooklyn_price)
